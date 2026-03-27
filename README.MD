@@ -40,6 +40,12 @@ docker build --build-arg VERSION=v1.0.0 -t local/server:v1.0.0 .
 docker run --rm -d -p 8080:80 --name mine local/server:v1.0.0
 ```
 
+# Komenda do sprawdzenia czy kontener działa
+
+```bash
+docker ps
+```
+
 ```
 CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS                    PORTS                                     NAMES
 9fca12a6c0d0   local/server:v1.0.0   "/docker-entrypoint.…"   12 seconds ago   Up 12 seconds (healthy)   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   mine
